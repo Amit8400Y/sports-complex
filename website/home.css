@@ -1,0 +1,203 @@
+*{
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: black;
+  }
+
+  .top {
+    margin-top: 5rem;
+  }
+  
+  .left {
+    margin-left: 1rem;
+    float: left;
+    font-size: 20%;
+  }
+
+  .bleeped-text {
+    font-size: 36px;
+    text-align: center;
+    color: red; /* Text color */
+    -webkit-text-stroke: 2px white; /* Stroke color and width */
+    mix-blend-mode: difference; /* Blend mode to create bleeped effect */
+  }
+  
+  .left a {
+    color: white;
+    font-size: 5vw;
+    text-decoration: none; 
+    color: #eadebe
+  }
+
+  .left a:hover {
+      color: white;
+  }
+  
+  .right {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    font-weight: 100;  
+    font-size: 3vw;
+    width: 40%;
+    float: right;
+  }
+  
+  .right a {
+    text-decoration: none;
+    color: white;
+  }
+   
+  
+  .right a:hover{
+    color: #eadebe;
+  }
+  
+  .body-pic {
+      margin-top: 5rem;
+  }
+
+  .row {
+    margin-top: 8rem;
+  }
+  
+  .column {
+    float: left;
+    width: 50%;
+    padding: 0 2rem;
+  }
+  
+  .card {
+    padding: 1rem;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+  
+  .card h {
+    font-size: 4.5vw;
+    color: black;
+  }
+  
+  .card p {
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.616);
+  }
+  
+  .fa {
+    padding: 1rem;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 2px;
+    border-radius: 50%;
+    background: black;
+    color: white;
+  }
+  
+  .fa:hover {
+      background-color: #c0ab71;
+      color: black;
+  }
+
+  .contact {
+    position: absolute;
+    margin-top: 26rem;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .contact h {
+    font-size: 5vw;
+    color: white;
+  }
+  
+  .contact p {
+    font-size: 3vw;
+    font-family: "Libre Baskerville", serif;
+    color: white;
+  }
+  
+  .map {
+    position: relative;
+    margin-top: 60rem;
+    margin-bottom: 5rem;
+  }
+
+  .map iframe {
+      height: 80vh;
+      margin-bottom: 10rem;
+  }
+
+  .map h {
+    color: white;
+    font-family: "Libre Baskerville", serif;
+    font-size: 2vw;
+  }
+
+
+@media screen and (max-width: 1024px) {
+    .right {
+        margin-top: 1rem;
+    }
+    .map {
+        margin-top: 54rem;
+        margin-bottom: 3rem;
+    }
+    .map iframe {
+        height: 60vh;
+        margin-bottom: 5rem;
+    }
+} 
+@media screen and (max-width: 750px) {
+    .top {
+        margin-top: 3rem;
+    }
+    .right {
+        margin-top: 0.5rem;
+    }
+    .body-pic {
+        margin-top: 4rem;
+    }
+    .row {
+        margin-top: 5rem;
+    }
+    .card p {
+        font-size: 20px;
+    }
+    .contact {
+        margin-top: 20rem;
+    }
+    .map {
+        margin-top: 38rem;
+        height: 10vh;
+        margin-bottom: 23rem;
+    }
+    .map iframe {
+        height: 37vh;
+    }
+    .map h {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width: 450px) {
+  .contact {
+    margin-top: 17rem;
+  }
+  .map {
+    margin-top: 35rem;
+    margin-bottom: 23rem;
+  }
+  .map iframe {
+    height: 35vh;
+  }
+  .card p {
+    font-size: 15px;
+  }
+  .fa {
+    padding: 0.8rem;
+    width: 35px;
+  }
+}

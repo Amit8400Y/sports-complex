@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: black;
+  }
+
+  .top {
+    margin-top: 5rem;
+  }
+  
+  .left {
+    margin-left: 1rem;
+    float: left;
+  }
+  
+  .left a {
+    color: white;
+    font-size: 5vw;
+    text-decoration: none;
+    color: #eadebe;
+  }
+
+  .left a:hover {
+      color: white;
+  }
+  
+  .right {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    font-weight: 100;  
+    font-size: 3vw;
+    width: 40%;
+    float: right;
+  }
+  
+  .right a {
+    text-decoration: none;
+    color: white;
+  }
+   
+  .right a:hover{
+    color: #eadebe;
+  }
+  
+  .bodypic1 {
+    margin-top: 5rem;
+  }
+
+  .row1 {
+    margin-top: 7rem;
+  }
+  
+  .column1 {
+    float: left;
+    width: 50%;
+    padding: 1rem;
+  }
+  
+  .column1 h {
+    font-family: 'Rouge Script', cursive;
+    color: white;
+    font-size: 6vw;
+    color: #eadebe;
+  }
+  
+  .column1a {
+    float: left;
+    width: 75%;
+  }
+  
+  .column1a p {
+    font-family: "Libre Baskerville", serif;
+    color: white;
+    font-size: 2vw;
+    margin-left: 1rem;
+  }
+  
+  .column1b {
+    float: left;
+    width: 25%;
+  }
+  
+  .column1b p {
+    font-family: "Libre Baskerville", serif;
+    color: white;
+    font-size: 2vw;
+    text-align: center;
+  }
+
+
+@media screen and (max-width: 1024px) {
+    .right {
+        margin-top: 1rem;
+    }
+} 
+
+@media screen and (max-width: 750px) {
+    .top {
+        margin-top: 3rem;
+    }
+    .right {
+        margin-top: 0.5rem;
+    }
+    .bodypic1 {
+        margin-top: 4rem;
+    }
+    .row1 {
+        margin-top: 4rem;
+    }
+    .column1 {
+      width: 100%;
+    }
+    .column1a p {
+      font-size: 3.5vw;
+    }
+    .column1b p {
+      font-size: 3.5vw;
+    }
+}

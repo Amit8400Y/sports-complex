@@ -1,0 +1,198 @@
+*{
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: black;
+  }
+
+  .top {
+    margin-top: 5rem;
+  }
+  
+  .left {
+    margin-left: 1rem;
+    float: left;
+  }
+  
+  .left a {
+    color: white;
+    font-size: 5vw;
+    text-decoration: none; 
+    color: #eadebe
+  }
+
+  .left a:hover {
+      color: white;
+  }
+  
+  .right {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    font-weight: 100;  
+    font-size: 3vw;
+    width: 40%;
+    float: right;
+  }
+  
+  .right a {
+    text-decoration: none;
+    color: white;
+  }
+   
+  .right a:hover{
+    color: #eadebe;
+  }
+  
+  .linebetween {
+    width: 100%;
+  }
+  
+  .linebetween::after, .linebetween::before {
+    content:'';
+    position: absolute;
+    height: 2px;
+    background: #666666;
+    width: 45%;
+    top: 17rem;
+  }
+  
+  .linebetween::after {
+    left:0
+  }
+  
+  .linebetween::before {
+    right:0
+  }
+  
+  .diamond {
+    position: relative;
+    height: 40px;
+    width: 40px;
+    border: 2px solid #666666;
+    margin: auto;
+    transform: rotate(45deg);
+    top: 11rem;
+  }
+  
+  .intro {
+    text-align: center;
+    position: relative;
+    margin-top: 17rem;
+  }
+  
+  .intro h {
+    font-family: "Great Vibes", cursive; 
+    font-size: 6vw;
+    color: #eadebe;
+  }
+  
+  body {
+    background-color: black;
+  }
+  
+  .mySlides1 {
+      display: none
+    }
+
+  img {vertical-align: middle;}
+  
+  .slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin-top: 8rem;
+    margin-bottom: 10rem;
+    padding: 0 3rem 0 3rem;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .next {
+    right: 0;
+  }
+
+  .prev {
+      left: 0;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: #f1f1f1;
+    color: black;
+  }
+  
+  .footer {
+    margin-bottom: 3rem;
+  }
+  
+  .footer h {
+    color: white;
+    font-family: "Libre Baskerville", serif;
+    font-size: 2vw;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .right {
+        margin-top: 1rem;
+    }
+    .linebetween::before, .linebetween::after {
+        top: 14rem;
+    }
+    .diamond {
+        top: 8rem;
+    }
+    .intro {
+        margin-top: 14rem;
+    }
+    .slideshow-container {
+        margin-top: 5rem;
+        margin-bottom: 7rem;
+    }
+} 
+@media screen and (max-width: 750px) {
+    .top {
+        margin-top: 3rem;
+    }
+    .right {
+        margin-top: 0.5rem;
+    }
+    .linebetween::before, .linebetween::after {
+        top: 9rem;
+    }
+    .diamond {
+        width: 30px;
+        height: 30px;
+        top: 5rem;
+    }
+    .intro {
+        margin-top: 9rem;
+    }
+    .slideshow-container {
+        margin-top: 4rem;
+        margin-bottom: 5rem;
+    }
+    .prev, .next {
+        padding: 10px;
+    }
+    .prev {
+        left: 0.5rem;
+    }
+    .next {
+        right: 0.5rem;
+    }
+    .footer h {
+        font-size: 3vw;
+    }
+}
